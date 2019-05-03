@@ -1,3 +1,6 @@
+# Nicki Hurley
+# 09/15/2017
+
 # This script runs through all the MXDs in the given folder path and replaces the source location of all the layers in the MXD
 # to that of the desired File GDB (where the name of the .shp is the same as the name of a feature class in the File GDB.
 # Multiple GDB locations can be used. Data in the MXD not included in the GDB are ignored (data links not broken). Resulting MXDs
@@ -7,11 +10,11 @@
 import arcpy, os
 
 # File path for MDXs to be updated
-MXD_Folder_Path = r"M:\Tallahassee\NSA_Panama_City\Output\SDSFIE\MXD"
+MXD_Folder_Path = r"M:\file_location"
 
 # File paths for GDB that data will be re-sourced to
-newBackgroundGDB = r"\\BUF-S-FILES-2\GISRegional\Tallahassee\NSA_Panama_City\Output\SDSFIE\GDB\Background.gdb"
-newSDSFIE = r"M:\Tallahassee\NSA_Panama_City\Output\SDSFIE\GDB\NAS_PanamaCity_N_LU_NDM_303.gdb.gdb"
+newBackgroundGDB = r"\\file_location"
+newProjectData = r"M:\file_location"
 
 # Set workspace for MXDs and loop through files
 arcpy.env.workspace = MXD_Folder_Path
