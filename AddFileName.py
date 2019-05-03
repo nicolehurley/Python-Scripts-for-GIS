@@ -14,7 +14,7 @@ from arcpy import env
 arcpy.env.overwriteOutput = True
 
 # Set the workspace directory 
-env.workspace = r"M:\Tallahassee\NSA_Panama_City\Output\SDSFIE\TEMP\staging_area.gdb" 
+env.workspace = r"M:\file_location" 
 
 # Get the list of the featureclasses to process
 fc_tables = arcpy.ListFeatureClasses()
